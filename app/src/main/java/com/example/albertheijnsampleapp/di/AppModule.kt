@@ -17,6 +17,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Named
 import javax.inject.Singleton
 
 /**
@@ -25,6 +26,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
+
 
     /**
      * Provides an instance of the OkHttpClient.
@@ -46,13 +48,23 @@ object AppModule {
     }
 
     /**
+     * Provides the API key used for network requests.
+     *
+     * @return The API key as a string.
+     */
+    @Singleton
+    @Provides
+    @Named("api_key")
+    external fun getKey(): String
+
+    /**
      * Provides an instance of the header interceptor.
      *
      * @return An instance of [Interceptor].
      */
     @Singleton
     @Provides
-    fun provideHeaderInterceptor(): Interceptor {
+    fun provideHeaderInterceptor(@Named("api_key") apiKey: String): Interceptor {
         return Interceptor { chain ->
             val originalRequest = chain.request()
 
@@ -60,7 +72,7 @@ object AppModule {
             val modifiedRequest = originalRequest.newBuilder()
                 .addHeader(
                     "x-api-key",
-                    "live_o6BUl8pmNdCn3eHmRcIYFgn3R7JpsPl2yEn7fC10mmeAAr5nXphNv5HfzOWzGzqZ"
+                    apiKey
                     //BuildConfig.ApiKey
                 )
                 .build()
@@ -134,7 +146,7 @@ object AppModule {
      */
     @Singleton
     @Provides
-    fun providesBreedDetailRepository(dataSource: DataSource) : BreedDetailRepository{
+    fun providesBreedDetailRepository(dataSource: DataSource): BreedDetailRepository {
         return BreedDetailRepositoryImpl(dataSource)
     }
 }

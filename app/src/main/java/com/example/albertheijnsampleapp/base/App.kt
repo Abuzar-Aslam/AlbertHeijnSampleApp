@@ -16,4 +16,11 @@ import dagger.hilt.android.HiltAndroidApp
  * @see HiltAndroidApp
  */
 @HiltAndroidApp
-class App : Application()
+class App : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+        System.loadLibrary("keys")
+    }
+
+}
