@@ -1,4 +1,4 @@
-package com.example.albertheijnsampleapp.presentation.state
+package com.example.albertheijnsampleapp.presentation.ui.list
 
 /**
  * Represents the state of the UI.

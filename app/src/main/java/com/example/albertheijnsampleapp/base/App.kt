@@ -22,5 +22,4 @@ class App : Application() {
         super.onCreate()
         System.loadLibrary("keys")
     }
-
 }

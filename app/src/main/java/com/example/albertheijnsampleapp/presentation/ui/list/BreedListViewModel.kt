@@ -4,10 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.example.albertheijnsampleapp.R
 import com.example.albertheijnsampleapp.domain.usecase.BreedUseCase
 import com.example.albertheijnsampleapp.presentation.model.list.BreedItem
-import com.example.albertheijnsampleapp.presentation.state.UiState
 import com.example.albertheijnsampleapp.presentation.state.UiAction
 import com.example.albertheijnsampleapp.utils.handleException
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -17,9 +15,6 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import org.jetbrains.annotations.VisibleForTesting
-import retrofit2.HttpException
-import java.io.IOException
 import javax.inject.Inject
 
 /**
@@ -35,7 +30,7 @@ class BreedListViewModel @Inject constructor(private val breedUseCase: BreedUseC
 
     private val _pagingData: MutableStateFlow<PagingData<BreedItem>> =
         MutableStateFlow(PagingData.empty())
-    val pagingData: Flow<PagingData<BreedItem>> = _pagingData.asStateFlow()
+    val pagingData: StateFlow<PagingData<BreedItem>> = _pagingData.asStateFlow()
 
     private val _uiState: MutableStateFlow<UiState> = MutableStateFlow(UiState())
     val uiState: StateFlow<UiState> = _uiState.asStateFlow()
