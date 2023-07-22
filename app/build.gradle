@@ -20,8 +20,6 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
-        // Access the API key using project.property
-        buildConfigField("String", "ApiKey", "${project.property("apiAccessKey")}")
     }
 
     buildTypes {
