@@ -1,6 +1,5 @@
 package com.example.albertheijnsampleapp.domain.model.detail
 
-
 /**
  * Represents the result of breed detail information for a specific breed.
  *

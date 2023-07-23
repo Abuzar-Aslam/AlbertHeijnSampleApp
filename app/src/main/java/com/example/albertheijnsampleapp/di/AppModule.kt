@@ -27,7 +27,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
-
     /**
      * Provides an instance of the OkHttpClient.
      *

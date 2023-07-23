@@ -1,15 +1,15 @@
 package com.example.albertheijnsampleapp.data.model.list
 
 /**
- * Data class representing the response model for an image.
+ * Model class representing the details of a cat breed image.
  *
- * This class holds the properties that describe an image, including its ID, width, height, and URL.
- * The class is used to map the response from the data layer to a more structured model.
+ * It encapsulates properties such as ID, dimensions (width and height), and URL of an image.
+ * This class assists in mapping the unstructured data from the API response to a well-defined model for further usage.
  *
- * @param id The unique identifier of the image.
- * @param width The width of the image.
- * @param height The height of the image.
- * @param url The URL of the image.
+ * @param id Unique identifier of the image.
+ * @param width Width dimension of the image.
+ * @param height Height dimension of the image.
+ * @param url Direct URL link of the image.
  */
 data class ImageResponse(
     val id: String?,
@@ -17,3 +17,4 @@ data class ImageResponse(
     val height: Int?,
     val url: String?
 )
+

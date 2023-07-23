@@ -22,8 +22,6 @@ interface DataSource {
         @Query("limit") limit: Int,
     ): List<BreedResponse>
 
-
-
     @GET("images/{id}")
     suspend fun getBreedDetail(@Path("id") id: String): BreedDetailResponse
 

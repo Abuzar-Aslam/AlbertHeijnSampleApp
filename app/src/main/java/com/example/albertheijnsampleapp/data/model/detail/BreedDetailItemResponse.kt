@@ -3,14 +3,17 @@ package com.example.albertheijnsampleapp.data.model.detail
 import com.google.gson.annotations.SerializedName
 
 /**
- * Represents the response data for a breed detail item from the API.
+ * Model class encapsulating detailed attributes of a cat breed from the API response.
  *
- * @property id The unique identifier of the breed.
- * @property name The name of the breed.
- * @property temperament The temperament of the breed.
- * @property origin The origin of the breed.
- * @property description The description of the breed.
- * @property lifeSpan The life span of the breed.
+ * The class carries detailed information about a breed, including its ID, name, temperament, origin, description, and lifespan.
+ * It serves to structure the raw data from the API response for convenient use in the app.
+ *
+ * @param id Unique identifier of the breed.
+ * @param name Breed's name.
+ * @param temperament Breed's temperament characteristics.
+ * @param origin Geographic origin of the breed.
+ * @param description Detailed description of the breed.
+ * @param lifeSpan Typical lifespan of the breed.
  */
 data class BreedDetailItemResponse(
     val id: String?,

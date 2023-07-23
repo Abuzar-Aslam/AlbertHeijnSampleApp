@@ -73,3 +73,4 @@ AlbertHeijn SampleApp exemplifies a modern Android app that follows the Clean Ar
 - Enhance test coverage, including Unit and UI testing.
 - Implement local database storage to support offline usage of the application.
 - Optimize data loading, implement first-page data loading for a smoother user experience.
+- Add the search functionality on Listing page

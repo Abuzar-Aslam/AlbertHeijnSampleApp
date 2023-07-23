@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.albertheijnsampleapp.R
 import com.example.albertheijnsampleapp.navigation.NavPath
-import com.example.albertheijnsampleapp.presentation.state.UiAction
+import com.example.albertheijnsampleapp.presentation.uiaction.UiAction
 import com.example.albertheijnsampleapp.presentation.ui.ErrorSnackbar
 import com.example.albertheijnsampleapp.presentation.ui.LoadingIndicator
 import com.example.albertheijnsampleapp.presentation.ui.TopAppBarUI

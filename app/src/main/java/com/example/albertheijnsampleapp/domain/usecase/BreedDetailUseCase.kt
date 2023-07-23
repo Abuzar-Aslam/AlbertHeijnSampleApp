@@ -4,13 +4,10 @@ import com.example.albertheijnsampleapp.data.model.Result
 import com.example.albertheijnsampleapp.data.repository.detail.BreedDetailRepository
 import com.example.albertheijnsampleapp.domain.model.detail.BreedDetailItemResult
 import com.example.albertheijnsampleapp.domain.model.detail.BreedDetailResult
-import com.example.albertheijnsampleapp.domain.model.list.BreedResult
-import com.example.albertheijnsampleapp.domain.model.list.ImageResult
 import com.example.albertheijnsampleapp.presentation.model.detail.BreedDetail
 import com.example.albertheijnsampleapp.presentation.model.detail.BreedDetailItem
-import com.example.albertheijnsampleapp.presentation.model.list.BreedItem
-import com.example.albertheijnsampleapp.presentation.model.list.ImageItem
 import javax.inject.Inject
+
 /**
  * Use case class responsible for fetching breed detail information from the repository.
  *

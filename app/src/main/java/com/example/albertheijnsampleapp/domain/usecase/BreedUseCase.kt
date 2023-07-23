@@ -34,7 +34,6 @@ class BreedUseCase @Inject constructor(
             }
     }
 
-
     /**
      * Maps the [BreedResult] to [BreedItem].
      *

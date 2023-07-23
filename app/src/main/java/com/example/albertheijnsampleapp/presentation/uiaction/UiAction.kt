@@ -1,4 +1,4 @@
-package com.example.albertheijnsampleapp.presentation.state
+package com.example.albertheijnsampleapp.presentation.uiaction
 
 /**
  * Sealed class representing UI actions.

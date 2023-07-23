@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.albertheijnsampleapp.R
 import com.example.albertheijnsampleapp.data.model.Result
 import com.example.albertheijnsampleapp.domain.usecase.BreedDetailUseCase
-import com.example.albertheijnsampleapp.presentation.state.UiAction
+import com.example.albertheijnsampleapp.presentation.uiaction.UiAction
 import com.example.albertheijnsampleapp.utils.handleException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

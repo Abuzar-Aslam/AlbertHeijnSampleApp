@@ -1,15 +1,15 @@
 package com.example.albertheijnsampleapp.data.model.list
 
 /**
- * Data class representing the response model for a breed.
+ * Model class to represent a cat breed from the API response.
  *
- * This class holds the properties that describe a breed, including its ID, name, temperament, and image Object.
- * The class is used to map the response from the data layer to a more structured model in the domain layer.
+ * It carries detailed properties describing a breed, such as its ID, name, temperament, and an associated image.
+ * This class aids in mapping the raw data from the API response into a more structured model for use in the domain layer.
  *
- * @param id The unique identifier of the breed.
- * @param name The name of the breed.
- * @param temperament The temperament of the breed.
- * @param image The image URL of the breed.
+ * @param id Unique identifier of the breed.
+ * @param name Breed's name.
+ * @param temperament Breed's temperament characteristics.
+ * @param image Associated image details of the breed.
  */
 data class BreedResponse(
     val id: String?,

@@ -6,10 +6,9 @@ import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.albertheijnsampleapp.domain.usecase.BreedUseCase
 import com.example.albertheijnsampleapp.presentation.model.list.BreedItem
-import com.example.albertheijnsampleapp.presentation.state.UiAction
+import com.example.albertheijnsampleapp.presentation.uiaction.UiAction
 import com.example.albertheijnsampleapp.utils.handleException
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

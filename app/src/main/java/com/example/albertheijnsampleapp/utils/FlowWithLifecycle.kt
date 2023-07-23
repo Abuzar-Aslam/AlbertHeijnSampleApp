@@ -1,6 +1,5 @@
 package com.example.albertheijnsampleapp.utils
 
-
 /*
  * Copyright 2021 Google LLC
  *
